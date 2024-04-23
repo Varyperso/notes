@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf ../node/dist && cd C:/Users/PC/Desktop/Programming/School/react/main/phonebook_2.17 && npm run build && cp -r dist ../../node",
+    "deploy:full": "npm run build:ui && C:/Users/PC/Desktop/Programming/School/react/node && git add . && git commit -m 'uibuild' && git push"
   },
   "author": "",
   "license": "ISC",

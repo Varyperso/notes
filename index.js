@@ -13,22 +13,22 @@ app.use(express.static("dist"));
 
 let persons = [
   {
-    id: 1,
+    id: 0,
     name: "Arto Hellas",
     number: "040-123456",
   },
   {
-    id: 2,
+    id: 1,
     name: "Ada Lovelace",
     number: "39-44-5323523",
   },
   {
-    id: 3,
+    id: 2,
     name: "Dan Abramov",
     number: "12-43-234345",
   },
   {
-    id: 4,
+    id: 3,
     name: "Mary Poppendieck",
     number: "39-23-6423122",
   },
@@ -67,15 +67,12 @@ app.delete("/api/persons/:id", (request, response) => {
   }
 });
 
-const generateId = () => (persons.length > 0 ? Math.floor(Math.random() * 999999) : 0);
-
 app.post("/api/persons", (request, response) => {
   const body = request.body;
-
   const person = {
+    id: body.id,
     name: body.name,
-    number: Number(body.number),
-    id: generateId(),
+    number: body.number,
   };
 
   !body.name

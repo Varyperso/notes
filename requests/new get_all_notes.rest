@@ -1,13 +1,5 @@
 GET http://localhost:3001/api/persons/
 ###
-POST http://localhost:3001/api/notes/
-Content-Type: application/json
-
-{
-  "title": "Your title here",
-  "content": "Your content here"
-}
-###
 DELETE http://localhost:3001/api/persons/4
 ###
 POST http://localhost:3001/api/persons/
