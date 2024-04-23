@@ -1,0 +1,11 @@
+POST /api/persons/ 201 70 - 1.102 ms
+POST /api/persons/ 201 69 - 1.081 ms - {"name":"Dan Abramova","number":"345344343545"}
+GET /api/persons 200 223 - 1.152 ms - {}
+GET /api/persons 200 223 - 1.173 ms - {}
+POST /api/persons 201 63 - 0.262 ms - {"name":"asdsad","number":"435345345345","id":"4"}
+GET /api/persons 200 287 - 0.164 ms - {}
+GET /api/persons 304 - - 0.274 ms - {}
+GET /api/persons 200 223 - 1.153 ms - {}
+POST /api/persons 201 49 - 0.254 ms - {"name":"asdasd","number":"4534534545","id":"4"}
+GET /api/persons 200 273 - 0.173 ms - {}
+GET /api/persons 304 - - 0.293 ms - {}
