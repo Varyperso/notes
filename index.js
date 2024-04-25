@@ -103,3 +103,20 @@ const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+////
+
+const mongoose = require("mongoose");
+const password = process.argv[2];
+
+const url = `mongodb+srv://varyperso1:BtkoBVN2SUKAw7g6@cluster0.qw37bun.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+
+mongoose.set("strictQuery", false);
+mongoose.connect(url);
+
+const entrySchema = new mongoose.Schema({
+  name: String,
+  number: String,
+});
+
+const Entry = mongoose.model("Person", entrySchema);
