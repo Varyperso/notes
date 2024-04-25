@@ -3,6 +3,3 @@ GET /api/persons/ 304 - - 0.152 ms - {}
 DELETE /api/persons/3 204 - - 0.038 ms - {}
 GET /api/persons/ 200 163 - 0.120 ms - {}
 GET /api/persons/ 304 - - 0.213 ms - {}
-GET /api/persons/ 200 223 - 0.952 ms - {}
-GET /favicon.ico 404 28 - 0.253 ms - {}
-GET /api/persons 200 223 - 0.178 ms - {}
