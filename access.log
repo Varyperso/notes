@@ -1,0 +1,14 @@
+GET /favicon.ico 404 28 - 1.068 ms - {}
+GET /api/persons 200 378 - 73.107 ms - {}
+GET /api/persons 200 378 - 448.871 ms - {}
+GET /api/persons 200 305 - 65.974 ms - {}
+DELETE /api/persons/662a926de083a0eab10c372f 204 - - 70.468 ms - {}
+GET /api/persons 200 305 - 437.377 ms - {}
+GET /api/persons 200 305 - 69.703 ms - {}
+GET /api/persons 200 305 - 69.864 ms - {}
+GET /api/persons 200 229 - 71.865 ms - {}
+GET /api/persons 200 229 - 71.777 ms - {}
+DELETE /api/persons/662a8c83415e487110c5ee65 204 - - 75.864 ms - {}
+GET /api/persons 200 229 - 69.275 ms - {}
+GET /api/persons 200 229 - 69.441 ms - {}
+GET /api/persons 200 229 - 74.055 ms - {}
