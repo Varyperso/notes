@@ -1,2 +1,5 @@
 node_modules
 access.log
+mongoose.js
+nodeBeforeMongo
+.env

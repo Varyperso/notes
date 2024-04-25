@@ -1,11 +1,16 @@
-GET http://localhost:3001/api/persons/
+GET http://localhost:3001/api/persons
 ###
-DELETE http://localhost:3001/api/persons/4
+DELETE http://localhost:3001/api/persons/6628ee5bc7cf7da9a8ca77d4
 ###
-POST http://localhost:3001/api/persons/
+POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
   "name": "Dan Abramova",
-  "number": "345344343545"
+  "number": "345344343545",
+  "id": 32432423434
 }
+###
+GET http://localhost:3001/api/persons/32432423434345
+###
+GET http://localhost:3001/info
