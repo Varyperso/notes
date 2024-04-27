@@ -1,0 +1,5 @@
+GET /api/persons/ 200 148 - 73.528 ms - {}
+GET /api/persons 304 - - 68.808 ms - {}
+DELETE /api/persons/662d10816eb4ca491d11c887 204 - - 80.123 ms - {}
+GET /api/persons 200 73 - 482.994 ms - {}
+GET /api/persons 304 - - 69.409 ms - {}
